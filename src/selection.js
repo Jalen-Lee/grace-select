@@ -1,0 +1,1 @@
+export {default as getSelectionAsHTML} from './getSelectionAsHTML.js'
