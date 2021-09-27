@@ -13,10 +13,6 @@ function isProduction(){
 export default function(config){
   const defaultConfig = {
     input: './src/selection.js',
-    output: {
-      file: '',
-      format: 'cjs'
-    },
     external: [], // 告诉rollup，哪些库不打包，将其视为外部链接
     Plugins: [ //插件
       pluginNodeResolve(),

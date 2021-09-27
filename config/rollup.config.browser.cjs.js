@@ -1,10 +1,12 @@
-import rollupConfig from './rollup.config'
+import rollupConfig from './rollup.config.js'
 
 export default rollupConfig({
   output: {
-    file: 'lib/selection.browser.cjs.js',
+    file: 'lib/selected.browser.cjs.js',
     format: 'cjs',
     exports: 'auto'
   },
   browser: true
 })
+
+
