@@ -1,8 +1,22 @@
 {
-  "name": "selection-js",
+  "name": "selected-js",
+  "description": "A Javascript library that allows you to easily manipulate the content of selected areas of the screen.",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "Jalen Lee",
+  "main": "lib/selected.browser.umd.js",
+  "module": "lib/selected.browser.es.js",
   "license": "MIT",
+  "keywords": [
+    "select",
+    "selected",
+    "selection",
+    "html",
+    "browser"
+  ],
+  "repository": {
+    "type": "git",
+    "url":""
+  },
   "dependencies": {
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21"
