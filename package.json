@@ -1,9 +1,9 @@
 {
-  "name": "jay-selected",
+  "name": "grace-select",
   "description": "A Javascript library that allows you to easily manipulate the content of selected areas of the screen.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Jalen Lee",
-  "main": "lib/selected.browser.umd.js",
+  "main": "lib/selected.browser.es.js",
   "module": "lib/selected.browser.es.js",
   "license": "MIT",
   "keywords": [
@@ -13,6 +13,14 @@
     "html",
     "browser"
   ],
+  "files": [
+    "README.md",
+    "grace-select.d.ts",
+    "lib/selected.browser.es.js",
+    "lib/selected.browser.umd.js",
+    "lib/selected.browser.cjs.js"
+  ],
+  "typings": "grace-select.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jalen-Lee/selected.js"
@@ -32,7 +40,8 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^1.1.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.4.3"
   },
   "scripts": {
     "build": "npm run build-cjs && npm run build-es && npm run build-umd && npm run build-iife",
@@ -43,10 +52,6 @@
     "build-test": "browserify test/selected-test.js --outfile test/selected-test.browser.js",
     "prepare": "npm run build",
     "test": "npm run build && npm run build-test && standard ./src/**/*.js && node test/selected-test.js",
-    "push" : "git push github master && git push gitee master"
-  },
-  "man": [
-    "./README.md"
-  ]
-  
+    "push": "git push github master && git push gitee master"
+  }
 }
