@@ -43,7 +43,7 @@
     "build-test": "browserify test/selected-test.js --outfile test/selected-test.browser.js",
     "prepare": "npm run build",
     "test": "npm run build && npm run build-test && standard ./src/**/*.js && node test/selected-test.js",
-    "push" : ""
+    "push" : "git push github master && git push gitee master"
   },
   "man": [
     "./README.md"
