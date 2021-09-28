@@ -42,7 +42,8 @@
     "build-iife": "rollup -c config/rollup.config.iife.js",
     "build-test": "browserify test/selected-test.js --outfile test/selected-test.browser.js",
     "prepare": "npm run build",
-    "test": "npm run build && npm run build-test && standard ./src/**/*.js && node test/selected-test.js"
+    "test": "npm run build && npm run build-test && standard ./src/**/*.js && node test/selected-test.js",
+    "push" : ""
   },
   "man": [
     "./README.md"
